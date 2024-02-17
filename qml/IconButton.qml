@@ -3,8 +3,11 @@ import QtQuick.Controls 2.15
 import QtGraphicalEffects 1.13
 
 Button {
-    implicitWidth: 70
-    implicitHeight: 70
+    Sizes {
+        id: sizes
+    }
+    implicitWidth: sizes.buttonSquare
+    implicitHeight: sizes.buttonSquare
     id: icon_button
     text: ""
     hoverEnabled: true

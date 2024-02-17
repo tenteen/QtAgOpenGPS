@@ -591,5 +591,6 @@
         <file>images/HeadlandSectionOff.png</file>
         <file>images/ZoomOGL.png</file>
         <file>images/HeadlandSectionOn.png</file>
+        <file>qml/Sizes.qml</file>
     </qresource>
 </RCC>
