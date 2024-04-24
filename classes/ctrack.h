@@ -51,7 +51,7 @@ public:
 
     QVector<CTrk> gArr;
 
-    Q_PROPERTY(int selectedTrack MEMBER idx NOTIFY selectedTrackChanged)
+    Q_PROPERTY(int selectedTrack MEMBER idx)
 
     int idx, autoTrack3SecTimer;
 
@@ -75,8 +75,7 @@ public:
 protected:
     // QML model interface
     virtual QHash<int, QByteArray> roleNames() const override;
-signals:
-    void selectedTrackChanged(int newSelectedTrack);
+
 private:
     // Used by QML model interface
     QHash<int, QByteArray> m_roleNames;
